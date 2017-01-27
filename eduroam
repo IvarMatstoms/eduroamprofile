@@ -1,0 +1,17 @@
+Description='Eduroam profile by Ivar Matstoms'
+Interface=NETWORK
+Connection=wireless
+Security=wpa2
+ESSID=eduroam
+IP=dhcp
+Security=wpa-configsection
+WPAConfigSection=(
+   'ssid="eduroam"'
+   'key_mgmt=WPA-EAP'
+   'eap=PEAP'
+   'proto=WPA RSN'
+   'identity="USERNAME"'
+   'anonymous_identity="USERNAME"'
+   'password="PASSWORD"'
+   'phase2="auth=MSCHAPV2 password=PASSWORD"'
+)
